@@ -1,0 +1,35 @@
+.header-top {
+  background-color: #000;
+  padding: 20px 0;
+  border-bottom: 3px solid #76a602;
+
+  img {
+    height: 36px;
+  }
+}
+
+.headtitle {
+  margin: 2rem 0;
+  letter-spacing: 0.8px;
+}
+
+.tour-item {
+  background: #fff;
+  margin-bottom: 1.8750rem;
+  box-shadow: 0px 8px 14px rgba(10, 10, 10, 0.08),
+  0px 0px 0px 1px #e6e6e6;
+
+  &__banner {
+    display: block;
+  }
+
+  &__title {
+    padding: 0.625rem;
+  }
+}
+
+footer {
+  background: #e6e6e6;
+  padding: 0.6rem;
+  margin-top: 2rem;
+}

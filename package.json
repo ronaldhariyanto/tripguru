@@ -1,0 +1,32 @@
+{
+  "name": "tripguru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@zeit/next-sass": "^0.1.2",
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "foundation-sites": "^6.4.4-rc1",
+    "next": "^5.1.0",
+    "node-sass": "^4.8.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldhariyanto/tripguru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldhariyanto/tripguru/issues"
+  },
+  "homepage": "https://github.com/ronaldhariyanto/tripguru#readme"
+}

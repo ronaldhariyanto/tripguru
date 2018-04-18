@@ -1,0 +1,7 @@
+@charset 'utf-8';
+@import './node_modules/foundation-sites/scss/foundation.scss';
+@import "settings.scss";
+
+@include foundation-everything;
+
+@import "application.scss";
