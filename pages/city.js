@@ -34,7 +34,12 @@ export default class TourList extends React.Component {
     axios.get(`http://tour.api.thetripguru.com/tours?filter[location.url]=${this.props.url.query.city}&limit=15&offset=1`)
       .then(res => {
         const tours = res.data.data;
-        this.setState({ tours });
+        if (typeof tours !== 'undefined') {
+          this.setState({ tours });
+        }
+      })
+      .catch((err) => {
+        console.error(err)
       })
   }
 

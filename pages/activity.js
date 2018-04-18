@@ -30,10 +30,24 @@ const Activity = (props) => (
 )
 
 Activity.getInitialProps = async function (context) {
-  const { id } = context.query
-  const res = await axios.get(`http://tour.api.thetripguru.com/tours/${id}`)
-  const tour = await res.data.data
-  return { tour }
+  try {
+    const { id } = context.query
+    const res = await axios.get(`http://tour.api.thetripguru.com/tours/${id}`)
+    const data = await res.data.data
+    if (typeof data !== 'undefined') {
+      return {
+        tour: data || []
+      }
+    }
+    return {
+      tour: []
+    }
+  } catch (error) {
+    console.log(error)
+    return {
+      tour: []
+    }
+  }
 }
 
 export default Activity
